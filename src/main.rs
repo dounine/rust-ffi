@@ -1,6 +1,6 @@
 
 
-#[link(name = "hello",kind = "dylib")]
+#[link(name = "hello")]
 extern "C" {
 
     pub fn hello_for_static();
