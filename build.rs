@@ -20,6 +20,10 @@ fn main() {
     println!("cargo:rustc-link-lib=dylib=hello_shared");
     println!("cargo:rustc-link-search=native=./lib_shared/build/macosx/arm64/release/");
 
+    // cd cpp_shared && xmake
+    println!("cargo:rustc-link-lib=dylib=cpp_shared");
+    println!("cargo:rustc-link-search=native=./cpp_shared/build/macosx/arm64/release/");
+
     // cd lib_static && xmake
     println!("cargo:rustc-link-lib=static=hello_static");
     println!("cargo:rustc-link-search=native=./lib_static/build/macosx/arm64/release/");
