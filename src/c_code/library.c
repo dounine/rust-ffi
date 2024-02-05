@@ -2,6 +2,6 @@
 
 #include <stdio.h>
 
-void hello_for_static() {
-    printf("Hello World for static!\n");
+void hello_for_ccode() {
+    printf("Hello World for code static!\n");
 }
