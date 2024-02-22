@@ -25,6 +25,7 @@ fn main() {
         hello_for_shared();
         hello_for_ccode();
 
+        //第一个c+++代码
         let mut error_mut: [std::os::raw::c_char; 1024] = [0; 1024];
         let c_str = get_hello(error_mut.as_mut_ptr());
         let r_str = unsafe { std::ffi::CStr::from_ptr(c_str).to_string_lossy() };
